@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complexity Lab — Learn Big-O by Watching Algorithms Run</title>
+    <meta
+      name="description"
+      content="Interactive Big-O laboratory: change the input size, watch algorithms run, count operations and see the complexity graph take shape. Available in English and Azerbaijani."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Complexity Lab" />
+    <meta property="og:title" content="Complexity Lab — Learn Big-O by Watching Algorithms Run" />
+    <meta
+      property="og:description"
+      content="Don't memorize Big-O. Discover why it looks the way it does — with interactive visualizations."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="az_AZ" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Complexity Lab — Learn Big-O by Watching Algorithms Run" />
+    <meta
+      name="twitter:description"
+      content="Interactive Big-O laboratory: watch algorithms run, count operations, see the graph."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Complexity Lab",
+        "description": "Interactive laboratory for learning Big-O notation and algorithm complexity.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Any",
+        "inLanguage": ["en", "az"],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+    <script>
+      try {
+        var t = localStorage.getItem("cl-theme");
+        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <noscript>
+        <h1>Complexity Lab</h1>
+        <p>
+          An interactive Big-O laboratory: change the input size, watch an algorithm run, count its operations and see
+          the complexity graph take shape. Please enable JavaScript to use it.
+        </p>
+      </noscript>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
